@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*under bar*/
+h2:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 45px;
+    width: 70px;
+    height: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #EC715F;
+}
+
+/*タグセレクター*/
+header {
+    background-color: #EC715F;
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+nav {
+    text-align: right;
+    line-height: 70px;
+}
+
+i {
+    height: 60px;
+    width: 60px;
+}
+
+p, h3, li, a {
+    font-family: Georgia, sans-serif;
+}
+
+footer {
+    height: 60px;
+    background-color: #EC715F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    padding-bottom: 30px;
+    font-size: 32px;
+}
+
+/*クラスセレクター*/
+/*Todo header*/
+.header-nav {
+    height: 70px;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.nav-text {
+    display: inline;
+    font-size: 16px;
+    color: white;
+    margin: 0 30px;
+}
+
+.nav-box a {
+    text-decoration: none;
+    color: white;
+}
+
+#hamburger {
+    display: none;
+    position: absolute;
+    right: 18px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+#hamburger div {
+    position: relative;
+}
+
+#hamburger span {
+    display: block;
+    position: absolute;
+    width: 26px;
+    right: 6px;
+    border-bottom: solid 2px white;
+}
+
+#hamburger span:nth-child(1) {
+    top: 11px;
+}
+
+#hamburger span:nth-child(2) {
+    top: 19px;
+}
+
+#hamburger span:nth-child(3) {
+    top: 27px;
+}
+
+.title-logo {
+    height: 70px;
+    float: left;
+}
+
+/* Todo main-visual*/
+
+.main-visual {
+    position: relative;
+    font-size: 0;
+    width: 100%;
+}
+
+.main-image {
+    height: 650px;
+    width: 100%;
+}
+
+.mobile-main-image {
+    display: none;
+}
+
+.main-text {
+    position: absolute;
+    top: 200px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.main-text h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+/*Todo portfolio*/
+.portfolio {
+    background: #ECEFF1;
+}
+
+.portfolio-box {
+    width: 920px;
+    height: 920px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.portfolio-text {
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-picture-box {
+    height: 540px;
+    padding-top: 30px;
+    width: 920px;
+}
+
+.portfolio-picture {
+    height: 250px;
+    width: 300px;
+    float: left;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-picture:nth-child(n+4) {
+    margin-top: 10px;
+}
+
+.portfolio-picture:not(:nth-child(3n)) {
+    margin-right: 10px;
+}
+
+.portfolio-picture:nth-child(1) {
+    background-image: url("img/sketch.jpg");
+}
+
+.portfolio-picture:nth-child(2) {
+    background-image: url("img/websuku.png");
+}
+
+.portfolio-picture:nth-child(3) {
+    background-image: url("img/write.jpg");
+}
+
+.portfolio-picture:nth-child(4) {
+    background-image: url("img/webcamp.png");
+}
+
+.portfolio-picture:nth-child(5) {
+    background-image: url("img/talk.jpg");
+}
+
+.portfolio-picture:nth-child(6) {
+    background-image: url("img/webcamp-mother.png");
+}
+
+/*Todo feature*/
+.feature-box {
+    width: 980px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.feature-text {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.feature-contentbox section:nth-child(-n+2) {
+    margin-right: 10px;
+}
+
+.feature-contentbox section {
+    width: 320px;
+    float: left;
+    text-align: center;
+}
+
+.feature-contentbox h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/*Todo profile*/
+.profile {
+    background-color: #ECEFF1;
+}
+
+.profile-box {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.profile-text {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    width: 512px;
+    height: 300px;
+    float: left;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.profile-detail {
+    width: 512px;
+    height: 300px;
+    float: left;
+}
+
+.profile-detail h3 {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.profile-name p {
+    padding-bottom: 20px;
+}
+
+/*Todo contact*/
+.contact-box {
+    width: 800px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.contact-text {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    width: 800px;
+}
+
+.contact-content h3 {
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.contact-information {
+    float: left;
+    width: 50%;
+}
+
+.contact-information section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-information section a {
+    color: black;
+}
+
+.contact-information section:nth-child(1) {
+    padding-bottom: 20px;
+}
+
+.contact-sns {
+    float: left;
+    width: 50%;
+}
+
+.contact-sns section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-icon{
+    font-size:0;
+}
+
+.contact-icon i {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.contact-icon i:nth-child(1) {
+    padding-right: 20px;
+}
+
+.contact-icon i:nth-child(2) {
+    margin-right: 20px;
+}
+
+.footer-text {
+    color: white;
+}
+
+/*Todo media767*/
+@media screen and (max-width: 767px) {
+    /*Todo res header*/
+    .header-nav {
+        height: 50px;
+        width: 90%;
+    }
+
+    #hamburger {
+        display: inline-block;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .mobile-main-image {
+        display: inline-block;
+        width: 100%;
+        height: 650px;
+    }
+
+    .title-logo {
+        height: 50px;
+    }
+
+    .nav-box{
+        display: none;
+    }
+
+    .header-nav{
+        margin: 0;
+    }
+
+    /*Todo res main-visual*/
+    .main-text{
+        width: 90%;
+    }
+
+    .main-text h1{
+        font-size: 40px;
+    }
+
+    .main-text p{
+        font-size: 18px;
+    }
+
+    /*Todo res portfolio*/
+    .portfolio{
+        height: 100%;
+    }
+
+    .portfolio-box{
+        width: 90%;
+        height: 100%;
+    }
+
+    .portfolio-picture-box{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*※なぜか最後に適用される*/
+    .portfolio-picture:not(:nth-child(3n)) {
+       margin: 0 auto;
+    }
+
+    .portfolio-picture{
+        float: none;
+        margin: 0 auto;
+    }
+
+    .portfolio-picture:nth-child(4){
+        margin-top: 10px;
+    }
+
+    .portfolio-picture-box div:nth-child(odd){
+        display: none;
+    }
+
+    /*Todo res feature*/
+    .feature-box {
+        width: 90%;
+    }
+
+    .feature-contentbox section {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .feature-text h2{
+        font-size: 32px;
+    }
+
+    .feature-contentbox section:not(:first-child){
+        padding-top: 10px;
+    }
+    /*なぜか最後に適用される*/
+    .feature-contentbox section:nth-child(-n+2) {
+        margin: 0 auto;
+    }
+
+    /*Todo res profile*/
+    .profile-picture {
+        float: none;
+        height: 100%;
+        width: 100%;
+    }
+
+    .profile-box {
+        width: 90%;
+    }
+
+    .profile-text h2{
+        font-size: 32px;
+    }
+
+    .profile-detail h3{
+        font-size: 20px;
+    }
+
+    .profile-detail{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .profile-detail p{
+        display: inline-block;
+    }
+
+    .profile-content{
+        /*height: 250px;*/
+    }
+
+    .profile-picture{
+        margin-bottom: 14px;
+    }
+
+    /*Todo res contact*/
+    .contact-information {
+        float: none;
+        width: 100%;
+    }
+
+    .contact-sns{
+        float: none;
+        width: 100%;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
+
+    .contact-content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-icon{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-information section:nth-child(2){
+        padding-bottom: 20px;
+    }
+
+    .contact-icon i:nth-child(1) {
+        padding-right: 8px;
+    }
+
+    .contact-icon i:nth-child(2) {
+        margin-right: 8px;
+    }
+}
